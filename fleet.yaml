@@ -1,0 +1,17 @@
+namespace: solid-ns
+targetCustomizations:
+- name: dev
+  helm:
+    valuesFiles:
+      - solid-dev.yaml
+  clusterSelector:
+    matchLabels:
+      env: quickstart-azure-dev
+
+- name: test
+  helm:
+    valuesFiles:
+      - solid-test.yaml
+  clusterSelector:
+    matchLabels:
+      env: quickstart-azure-custom
