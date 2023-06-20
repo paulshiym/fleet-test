@@ -1,4 +1,6 @@
 namespace: solid-ns
+helm:
+  chart: https://communitysolidserver.github.io/css-helm-chart/charts/
 targetCustomizations:
 - name: dev
   helm:

@@ -1,0 +1,42 @@
+affinity: {}
+baseUrlOverride: ''
+config:
+  bundled: default
+  configMapKey: ''
+  configMapName: ''
+fullnameOverride: ''
+image:
+  pullPolicy: IfNotPresent
+  pullSecrets: []
+  registry: docker.io
+  repository: solidproject/community-server
+  tag: 2.0.1
+ingress:
+  annotations: {}
+  enabled: false
+  host: CSS.local
+  ingressClassName: ''
+  path: /
+  tls: []
+logLevel: info
+nameOverride: ''
+nodeSelector: {}
+persistence:
+  enabled: false
+  existingClaim: ''
+  selector: {}
+  size: 128Mi
+  storageClass: ''
+  subPath: ''
+podAnnotations: {}
+podSecurityContext: {}
+resources:
+  limits: {}
+  requests: {}
+securityContext: {}
+service:
+  nodePort: '31888'
+  port: 80
+  type: NodePort
+showStacktrace: false
+tolerations: []
